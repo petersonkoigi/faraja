@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Opportunities</title>
+    <link rel="stylesheet" href="C:\Users\ICT DEPT\Desktop\charity org\volunteer.css">
+    <link rel="stylesheet" href="volunteer.css">
+    <link rel="script" type="javascript" href=C:\Users\ICT DEPT\Desktop\demos\volunteer.js>
+    </li>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Get Involved</a>
+                    <div class="dropdown-content">
+                        <a href="volunteer.html">Volunteer</a>
+                        <!-- Add more links here if needed -->
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Make a Difference Today</h1>
+        <p>Join our community of volunteers and help create positive change</p>
+    </header>
+
+    <main>
+        <section class="filters">
+            <h2>Find Opportunities</h2>
+            <div class="filter-options">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="education">Education</option>
+                    <option value="environment">Environment</option>
+                    <option value="health">Healthcare</option>
+                    <option value="community">Community</option>
+                </select>
+                <select id="timeFilter">
+                    <option value="all">Any Time</option>
+                    <option value="weekend">Weekends</option>
+                    <option value="weekday">Weekdays</option>
+                    <option value="evening">Evenings</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="opportunities" id="opportunitiesList"></section>
+
+        <section class="signup-form">
+            <h2>Ready to Volunteer?</h2>
+            <form id="volunteerForm">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <select id="interest" required>
+                        <option value="">Select Area of Interest</option>
+                        <option value="education">Education</option>
+                        <option value="environment">Environment</option>
+                        <option value="health">Healthcare</option>
+                        <option value="community">Community</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Tell us about your interests and availability"></textarea>
+                </div>
+                <button type="submit">Sign Up to Volunteer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2024 Faraja Craft House. All rights reserved.</p>
+        <form class="newsletter">
+            <h4>Subscribe to our Newsletter</h4>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
+
+
+    <script type="module" src="volunteer.js"></script>
+</body>
+
+</html>

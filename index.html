@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faraja Craft House</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="script" href="new.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Get Involved</a>
+                    <div class="dropdown-content">
+                        <a href="volunteer.html">Volunteer</a>
+                        <!-- Add more links here if needed -->
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Events</a>
+                    <div class="dropdown-content">
+                        <a href="#">Walkathons</a>
+                        <a href="#">Charity Dinners</a>
+                        <li></li>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Hero Section -->
+    <section id="home" class="hero">
+        <h1>
+            <marquee direction="left">Welcome to Faraja Craft House</marquee>
+        </h1>
+        <p>Join us in making a difference.</p>
+        <a href="#donate" class="button">Donate Now</a>
+    </section>
+
+    <!-- Welcome Message -->
+    <section class="welcome-message">
+        <h2>Welcome</h2>
+        <div class="image-container">
+            <img src="cp1.jpeg">
+            <img src="cp4.jpeg">
+            <img src="cp6.jpeg">
+        </div>
+        <p>Welcome to Faraja Craft House,where creativity and play meet to nurture young minds!</p>
+    </section>
+    <!--quick info-->
+    <section class="quick-info-section">
+        <script type="text/javascript">
+            const cards = document.querySelectorAll('.info-card');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            cards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+                observer.observe(card);
+            });
+        </script>
+        <h2 class="section-title">Quick Information</h2>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📍 Our Facilities</h3>
+                <ul>
+                    <li>Modern Indoor Play Space</li>
+                    <li>Secure Outdoor Playground</li>
+                    <li>Educational Activity Rooms</li>
+                    <li>Sports Equipment Available</li>
+                    <li>Safe Learning Environment</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>👥 Age Groups</h3>
+                <p>We welcome children and youth aged 5-17 years</p>
+                <ul>
+                    <li>Kids Program (Ages 5-12)</li>
+                    <li>Teen Program (Ages 13-17)</li>
+                    <li>Age-appropriate Activities</li>
+                    <li>Specialized Support Staff</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>🤝 Support & Funding</h3>
+                <ul>
+                    <li>Generous Donor Support</li>
+                    <li>Community Partnerships</li>
+                    <li>Volunteer Programs</li>
+                    <li>Transparent Fund Usage</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>ℹ️ Additional Information</h3>
+                <ul>
+                    <li>Professional Staff Supervision</li>
+                    <li>Regular Safety Inspections</li>
+                    <li>First Aid Trained Personnel</li>
+                    <li>Accessible Facilities</li>
+                    <li>Parent Support Services</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved">
+        <h2>Get Involved</h2>
+        <!-- slider featured programs-->
+        <section class="programs-section">
+            <h2 class="section-title">Our Programs for Kids</h2>
+
+            <div class="slider-container">
+                <div class="slider" id="programSlider">
+                    <div class="slide">
+                        <img src="cp9.jpeg" alt="Art Classes">
+                        <div class="slide-content">
+                            <h3>Creative Art Classes</h3>
+                            <p>Nurturing creativity through painting, drawing, and crafts. Children explore various mediums and express themselves freely.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="cp5.jpeg" alt="Outdoor Sports">
+                        <div class="slide-content">
+                            <h3>Outdoor Sports & Activities</h3>
+                            <p>Building teamwork and physical fitness through organized sports, games, and outdoor adventures.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="cp1.jpeg" alt="Reading Corner">
+                        <div class="slide-content">
+                            <h3>Cozy Reading Corner</h3>
+                            <p>A peaceful space for literary exploration, storytelling sessions, and developing a love for reading.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="cp7.jpeg" alt="Interactive Workshops">
+                        <div class="slide-content">
+                            <h3>Interactive Workshops</h3>
+                            <p>Hands-on learning experiences in science, technology, and creative problem-solving.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="cp10.jfif" alt="Music & Movement">
+                        <div class="slide-content">
+                            <h3>Creative Arts</h3>
+                            <p>Exploring rhythm, dance, and musical instruments in a fun, energetic environment.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="slide">
+                    <img src="path-to-your-stem-image.jpg" alt="STEM Activities">
+                    <div class="slide-content">
+                        <h3>STEM Discovery</h3>
+                        <p>Engaging activities in science, technology, engineering, and mathematics for young minds.</p>
+                    </div>
+                </div> -->
+                </div>
+
+                <div class="slider-buttons">
+                    <button class="slider-btn prev-btn">←</button>
+                    <button class="slider-btn next-btn">→</button>
+                </div>
+            </div>
+
+            <div class="dots-container" id="sliderDots"></div>
+        </section>
+        <div class="opportunities">
+            <h3> <a href="volunteer.html">Volunteer Opportunities</a></h3>
+            <p>Join us in various volunteer programs that make a difference.</p>
+        </div>
+        <div class="mailing-list">
+            <h3>Join Our Mailing List</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="mission">
+            <h3>Mission</h3>
+            <p>Our mission is to provide support and resources to those in need.</p>
+        </div>
+        <div class="vision">
+            <h3>Vision</h3>
+            <p>We envision a world where everyone has access to the resources they need.</p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2024 Faraja Craft House. All rights reserved.</p>
+        <form class="newsletter">
+            <h4>Subscribe to our Newsletter</h4>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <!-- Google Map Section -->
+        <div class="google-map">
+            <h4>Our Location in Kenya</h4>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1338452.012482003!2d34.0335!3d-0.0236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182780d08350900f%3A0x403b0eb0a1976dd9!2sKenya!5e0!3m2!1sen!2ske!4v1731154830799!5m2!1sen!2ske
+        " width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+        </div>
+
+    </footer>
+    <script type="" src="new.js"></script>
+
+</body>
+
+</html>

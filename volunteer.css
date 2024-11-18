@@ -1,0 +1,214 @@
+:root {
+    --primary-color: #2c5282;
+    --secondary-color: #4299e1;
+    --background-color: #f7fafc;
+    --text-color: #2d3748;
+    --success-color: #48bb78;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: #5cba47;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    padding: 70px 0;
+    
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    position: relative; /* Needed for dropdown positioning */
+    margin: 0 15px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+#navbar a:hover {
+    color: #4299e1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.filters {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.filter-options {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+select {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.opportunities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.opportunity-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-5px);
+}
+
+.opportunity-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.signup-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #5cba47;
+    color: white;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .filter-options {
+        flex-direction: column;
+    }
+    
+    .opportunities {
+        grid-template-columns: 1fr;
+    }
+}
